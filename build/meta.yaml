@@ -8,23 +8,25 @@ requirements:
   build:
     - python
     - setuptools
-    - pytorch=1.4.0
-    - torchvision=0.5.0
-    - fastai=1.0.60
+    - arcgis=1.8.0
     - libtiff=4.0.10
     - scikit-image=0.15.0
     - pillow=6.2.2
-    - arcgis=1.8.0
+    - fastai=1.0.60
+    - fastprogress=0.2.2
+    - pytorch=1.4.0
+    - torchvision=0.5.0
 
   run:
     - python
-    - pytorch=1.4.0
-    - torchvision=0.5.0
-    - fastai=1.0.60
+    - arcgis=1.8.0
     - libtiff=4.0.10
     - scikit-image=0.15.0
     - pillow=6.2.2
-    - arcgis=1.8.0
+    - fastai=1.0.60
+    - fastprogress=0.2.2
+    - pytorch=1.4.0
+    - torchvision=0.5.0
 
 test:
   imports:
@@ -38,3 +40,6 @@ about:
   home: https://developers.arcgis.com/python
   license: Esri Master License Agreement (MLA)
 
+build:
+  noarch: generic
+  
