@@ -1,1 +1,0 @@
-conda build arcgis_learn -c esri -c pytorch -c fastai

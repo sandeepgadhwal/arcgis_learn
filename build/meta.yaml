@@ -1,45 +1,78 @@
 package:
   name: arcgis_learn
-  version: "0.1"
+  version: "0.1.8"
+
+build:
+  noarch: generic
 
 source:
   path: ../src
+
 requirements:
   build:
-    - python
-    - setuptools
-    - arcgis=1.8.0
-    - libtiff=4.0.10
-    - scikit-image=0.15.0
-    - pillow=6.2.2
+    - arcgis=1.8.2
     - fastai=1.0.60
-    - fastprogress=0.2.2
+    - fastprogress
+    - gdal=2.3.3
+    #- gdal=3.0.2
+    - h5py=2.10.0
+    - laspy=1.7.0
+    - libgdal=2.3.3
+    - libtiff=4.0.10
+    - onnx=1.7.0
+    - onnx-tf=1.5.0
+    - opencv=4.0.1.24
+    - pillow-simd=7.1.2
+    - plotly=4.5.4
+    - python
     - pytorch=1.4.0
+    - scikit-image=0.17.2
+    - setuptools
+    - spacy=2.2.4
+    - torch-cluster=1.5.4
+    - torch-geometric=1.5.0
+    - torch-scatter=2.0.4
+    - torch-sparse=0.6.1
+    - torch-spline-conv=1.2.0
     - torchvision=0.5.0
 
   run:
-    - python
-    - arcgis=1.8.0
-    - libtiff=4.0.10
-    - scikit-image=0.15.0
-    - pillow=6.2.2
+    - arcgis=1.8.2
     - fastai=1.0.60
-    - fastprogress=0.2.2
+    - fastprogress
+    - gdal=2.3.3
+    #- gdal=3.0.2
+    - h5py=2.10.0
+    - laspy=1.7.0
+    - libgdal=2.3.3
+    - libtiff=4.0.10
+    - onnx=1.7.0
+    - onnx-tf=1.5.0
+    - opencv=4.0.1.24
+    - pillow-simd=7.1.2
+    - plotly=4.5.4
+    - python
     - pytorch=1.4.0
+    - scikit-image=0.17.2
+    - setuptools
+    - spacy=2.2.4
+    - torch-cluster=1.5.4
+    - torch-geometric=1.5.0
+    - torch-scatter=2.0.4
+    - torch-sparse=0.6.1
+    - torch-spline-conv=1.2.0
     - torchvision=0.5.0
 
 test:
   imports:
     - arcgis
+    - fastai
+    - gdal
+    - PIL
     - torch
     - torchvision
-    - PIL
-    - fastai
 
 about:
   home: https://developers.arcgis.com/python
   license: Esri Master License Agreement (MLA)
 
-build:
-  noarch: generic
-  
