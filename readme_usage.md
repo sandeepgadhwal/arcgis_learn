@@ -4,12 +4,12 @@ Meta package to simpify install of dependencies required for using arcgis.learn 
 
 ## Post Build Installation Steps using conda  
 ```bash
-conda install -c esri -c fastai -c pytorch -c sandeepgadhwal arcgis_learn
+conda install -c esri -c fastai -c pytorch -c plotly -c sandeepgadhwal arcgis_learn
 ```
 
 ## Post Build Installation Steps using the local build
 ````bash
-conda install -c esri -c fastai -c pytorch -c "C:\Users\san10428\conda-bld" arcgis_learn
+conda install -c esri -c fastai -c pytorch -c plotly -c "C:\Users\san10428\conda-bld" arcgis_learn
 ````
 
 ## Upgrading any package installed with the metapackage

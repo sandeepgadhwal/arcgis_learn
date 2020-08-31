@@ -12,7 +12,7 @@ git clone https://github.com/sandeepgadhwal/arcgis_learn
 ````
 Trigger Build
 ````bash
-conda build arcgis_learn -c esri -c pytorch -c fastai
+conda build arcgis_learn -c esri -c pytorch -c fastai -c plotly
 ````
 
 ## Testing
@@ -23,7 +23,7 @@ conda activate arcgis_learn
 ````
 Install the local build
 ````bash
-conda install -c esri -c fastai -c pytorch -c "C:\Users\san10428\conda-bld" arcgis_learn
+conda install -c esri -c fastai -c pytorch -c plotly -c "C:\Users\san10428\conda-bld" arcgis_learn
 ````
 Now run the sanity tests which you wat to run
 
