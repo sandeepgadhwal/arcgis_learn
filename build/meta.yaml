@@ -30,6 +30,7 @@ requirements:
     - scikit-image=0.17.2
     - setuptools
     - spacy=2.2.4
+    - tensorflow-gpu=2.1.0
     - torch-cluster=1.5.4
     - torch-geometric=1.5.0
     - torch-scatter=2.0.4
@@ -59,6 +60,7 @@ requirements:
     - scikit-image=0.17.2
     - setuptools
     - spacy=2.2.4
+    - tensorflow-gpu=2.1.0
     - torch-cluster=1.5.4
     - torch-geometric=1.5.0
     - torch-scatter=2.0.4
