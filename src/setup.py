@@ -1,7 +1,7 @@
-
+import os
 from setuptools import setup, find_packages
 
-with open("readme.md", "r") as fh:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "readme.md"), "r") as fh:
     long_description = fh.read()
 
 dependencies = []

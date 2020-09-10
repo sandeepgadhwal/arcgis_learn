@@ -12,7 +12,7 @@ git clone https://github.com/sandeepgadhwal/arcgis_learn
 ````
 Trigger Build
 ````bash
-conda build arcgis_learn -c esri -c pytorch -c fastai -c plotly
+conda build arcgis_learn -c esri -c pytorch -c fastai -c plotly -c sandeepgadhwal
 ````
 
 ## Testing
