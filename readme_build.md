@@ -50,5 +50,5 @@ anaconda upload arcgis_learn/dst/noarch/arcgis_learn-0.1.8-py37_0.tar.bz2
 ## Cleanup
 Clean intermediate and final build artifact from local
 ```bash
-conda build purge
+conda build purge-all
 ```

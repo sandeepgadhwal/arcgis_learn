@@ -10,6 +10,7 @@ conda install -c esri -c fastai -c pytorch -c plotly -c sandeepgadhwal arcgis_le
 ## Post Build Installation Steps using the local build
 ````bash
 conda install -c esri -c fastai -c pytorch -c plotly -c "C:\Users\san10428\conda-bld" arcgis_learn
+conda install -c esri -c fastai -c pytorch -c plotly -c ~/anaconda3/conda-bld -c sandeepgadhwal arcgis_learn
 ````
 
 ## Upgrading any package installed with the metapackage

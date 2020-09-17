@@ -27,6 +27,7 @@ requirements:
     - pillow-simd=7.1.2
     - plotly=4.5.4
     - plotly-orca=1.3.1
+    - pyshp=2.1.0
     - python
     - pytorch=1.4.0
     - scikit-learn
@@ -62,6 +63,7 @@ requirements:
     - pillow-simd=7.1.2
     - plotly=4.5.4
     - plotly-orca=1.3.1
+    - pyshp=2.1.0
     # - python
     - pytorch=1.4.0
     - scikit-learn
