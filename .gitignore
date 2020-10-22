@@ -1,0 +1,6 @@
+*.sw[op]
+nuget/repository
+arcgispro-py-extras/__pycache__
+*~
+.idea/
+.vscode/
