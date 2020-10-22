@@ -1,41 +1,37 @@
+{% set name = "arcgis_learn" %}
+{% set version = "1.8.3" %}
+
 package:
-  name: arcgis_learn
-  version: "0.1.8"
+  name: {{ name | lower }}
+  version: {{ version }}
 
 build:
+  number: 0
   noarch: python
-
-source:
-  path: ../src
 
 requirements:
   build:
-#    - {{ pin_compatible('numpy') }}
+    #    - {{ pin_compatible('numpy') }}
     - arcgis=1.8.3
     - fastai=1.0.60
-    - fastprogress=1.0.0
+    - fastprogress=0.2.3
     - gdal=2.3.3
-#    - gdal=3.0.2
     - graphviz=2
     - h5py=2.10.0
     - imagecodecs=2020.5.30
     - keras-gpu=2.3
     - laspy=1.7.0
-#    - libgdal=2.3.3
-#    - libtiff=4.0.10
-    - numpy=1.19.1
+    - libgdal=2.3.3
     - onnx=1.7.0
     - onnx-tf=1.5.0
     - opencv=4.0.1
     - pillow-simd=7.1.2
     - plotly=4.5.4
-    - plotly-orca=1.3.1
     - pyshp=2.1.0
-    - python>=3.6,<3.8
+    - python>=3.6
     - pytorch=1.4.0
-    - scikit-learn
+    - scikit-learn=0.23.1
     - scikit-image=0.17.2
-    - setuptools
     - spacy=2.2.4
     - tensorboardx=2.1
     - tensorflow-gpu=2.1.0
@@ -45,35 +41,30 @@ requirements:
     - torch-sparse=0.6.1
     - torch-spline-conv=1.2.0
     - torchvision=0.5.0
-    - transforms3d=0.3.1
+    - transformers=3.3.0
 
   run:
 #    - {{ pin_compatible('numpy') }}
     - arcgis=1.8.3
     - fastai=1.0.60
-    - fastprogress=1.0.0
+    - fastprogress=0.2.3
     - gdal=2.3.3
-#    - gdal=3.0.2
     - graphviz=2
     - h5py=2.10.0
     - imagecodecs=2020.5.30
     - keras-gpu=2.3
     - laspy=1.7.0
-#    - libgdal=2.3.3
-#    - libtiff=4.0.10
-    - numpy=1.19.1
+    - libgdal=2.3.3
     - onnx=1.7.0
     - onnx-tf=1.5.0
     - opencv=4.0.1
     - pillow-simd=7.1.2
     - plotly=4.5.4
-    - plotly-orca=1.3.1
     - pyshp=2.1.0
-#    - python
+    - python>=3.6
     - pytorch=1.4.0
-    - scikit-learn
+    - scikit-learn=0.23.1
     - scikit-image=0.17.2
-#    - setuptools
     - spacy=2.2.4
     - tensorboardx=2.1
     - tensorflow-gpu=2.1.0
@@ -83,7 +74,7 @@ requirements:
     - torch-sparse=0.6.1
     - torch-spline-conv=1.2.0
     - torchvision=0.5.0
-    - transforms3d=0.3.1
+    - transformers=3.3.0
 
 test:
   imports:
@@ -93,9 +84,15 @@ test:
     - PIL
     - torch
     - torchvision
+    - skimage
+    - sklearn
 
 about:
   home: https://developers.arcgis.com/python
   license: Esri Master License Agreement (MLA)
   summary: A Metapackage to simplify installation of the required deep learning dependecies for ArcGIS Python API.
 
+extra:
+  recipe-maintainers:
+    - SandeepKumar
+    - SurajBaloni
